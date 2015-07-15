@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shezi_msg_bk_pressed" >
+
+    <LinearLayout
+        android:id="@+id/register_back_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_more_msg_item"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/takeout_ic_actionbar_back" />
+
+        <TextView
+            style="@style/textsize_24"
+            android:text="注册" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/register_name_edit"
+        style="@style/import_text"
+        android:layout_below="@id/register_back_layout"
+        android:layout_marginTop="30dp"
+        android:hint="请输入注册用户名"
+        android:padding="10dp"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/test_user_name_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_name_edit"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selector_login_btn_item"
+        android:text="检测用户名是否已存在" />
+
+    <EditText
+        android:id="@+id/register_password1_edit"
+        style="@style/import_text"
+        android:layout_below="@id/test_user_name_btn"
+        android:layout_marginTop="5dp"
+        android:hint="请输入注册密码"
+        android:padding="10dp"
+        android:password="true"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/register_password2_edit"
+        style="@style/import_text"
+        android:layout_below="@id/register_password1_edit"
+        android:layout_marginTop="5dp"
+        android:hint="请再次输入密码"
+        android:padding="10dp"
+        android:password="true"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/confirm_btn"
+        style="@style/login_btn"
+        android:layout_below="@id/register_password2_edit"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/selector_login_btn_item"
+        android:text="确定" />
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/msg_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="2dp"
+    android:orientation="vertical"
+    android:padding="3dp" >
+
+    <ImageView
+        android:id="@+id/pic_img"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/meituan_gt_image7" />
+
+    <TextView
+        android:id="@+id/title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/pic_img"
+        android:text="重庆火巴耳朵火锅"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/msg_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_txt"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/pic_img"
+        android:hint="[音乐学院] 庆开业代金券，全场通用"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/jiaqian_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/pic_img"
+        android:layout_toRightOf="@id/pic_img"
+        android:text="9.9"
+        android:textColor="#20B2AA"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/yuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/pic_img"
+        android:layout_toRightOf="@id/jiaqian_txt"
+        android:text="元"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/zekou_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/pic_img"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/yuan"
+        android:hint="50元"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/pingfen_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/zekou_txt"
+        android:layout_alignParentRight="true"
+        android:text="4.5分(100)"
+        android:textSize="12sp" />
+
+</RelativeLayout>

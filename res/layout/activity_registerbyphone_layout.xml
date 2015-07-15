@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shezi_msg_bk_pressed" >
+
+    <LinearLayout
+        android:id="@+id/phone_back_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_more_msg_item"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/takeout_ic_actionbar_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="手机号码快捷登陆"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/phonebtn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_back_layout"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/phone_edit"
+            style="@style/import_text"
+            android:hint="请输入手机号码"
+            android:maxLength="11"
+            android:phoneNumber="true"
+            android:singleLine="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/phone_edit"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/phone_edit"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_login_btn_normal_item"
+            android:text="发送验证码"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/phone_word_edit"
+        style="@style/import_text"
+        android:layout_below="@id/phonebtn_layout"
+        android:hint="请输入短信验证码"
+        android:padding="10dp"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/verification"
+        style="@style/login_btn"
+        android:layout_below="@id/phone_word_edit"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_login_btn_normal_item"
+        android:text="验证并登陆" />
+
+</RelativeLayout>

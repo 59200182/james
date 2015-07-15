@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="green_text_color">#20B2AA</color>
+    <color name="white_text_color">#FFFFFFFF</color>
+    <color name="bg_gray">#ffd6d6d6</color>
+    <color name="abs__bright_foreground_holo_dark">#fff3f3f3</color>
+    <color name="shezi_title_bk">#00F9F9F9</color>
+    <color name="shezi_msg_bk">#00F0F0F0</color>
+    <color name="shezi_msg_bk_pressed">#00FFFFFF</color>
+
+</resources>
